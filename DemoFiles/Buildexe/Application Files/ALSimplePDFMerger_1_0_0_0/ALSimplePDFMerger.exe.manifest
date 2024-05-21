@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="ALSimplePDFMerger.exe" version="1.0.0.0" publicKeyToken="a879992bcfe8ade3" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ALSimplePDFMerger" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="ALSimplePDFMerger.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opzioni manifesto Controllo dell'account utente
+          Se si vuole modificare il livello di Controllo dell'account utente di Windows, sostituire il
+          nodo requestedExecutionLevel con uno dei seguenti.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Se si vuole usare Virtualizzazione file system e registro di sistema per la 
+         compatibilità con le versioni precedenti, eliminare il nodo requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ALSimplePDFMerger.exe" size="12736">
+      <assemblyIdentity name="ALSimplePDFMerger" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>D2TPmX7h1Efij9H1vMtoMbjLofySUi+zPHfyyR9u6Xw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BouncyCastle.Crypto.dll" size="2609152">
+      <assemblyIdentity name="BouncyCastle.Crypto" version="1.8.9.0" publicKeyToken="0E99375E54769942" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>MzkDx9IqJwmORfxkt3omSqIgYFz70+MpwgDX5LQsiBw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="itextsharp.dll" size="2592768">
+      <assemblyIdentity name="itextsharp" version="5.5.13.3" publicKeyToken="8354AE6D2174DDCA" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>zloQfa1DpBAe6z/oT/bRc6bVXzTwv/cltTY2bxDplBA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="ALSimplePDFMerger.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=TBOOKALEX\aless" issuerKeyHash="fec4034a951c5d0a2fa1094218a3a0fed3ae9fd6" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>3yZeA5A6N1rfQjvQTbeQxXPfmRHjxqkrIUBNKxohc30=</DigestValue></Reference></SignedInfo><SignatureValue>UvI+RCi3XHjD0G9z61aA48G/fC5KtUAJ0M91dHGdzZI6HaxX1Ka6zccZAaDiH2OaGRGo5m9xh4znayxe2hJszJmLUpKRLMZw5FlHvLoW0S3sQh5oC4W/Zn4tEglkeGfSceeSTeIrZWAyxZ5r20b7oUGvfVGtQJrZRqPpv3BNARA=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>3ecAgZpouY2WDCVeI12w/U/GxMcyc73v1X40Eybs41/H24m85b7wRCV4fn5dbcCwoW24Zz4o6xxR//fmJw1joumZFpggFf0QDWBiVtRql6NKbc/g6LCGRYGDO13QItWw3Rk17/xUi/SGfinjcbbO3UO/vAEnQJwD9M7NHWOdxnU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="7d73211a2b4d40212ba9c6e31199df73c590b74dd03b42df5a373a90035e26df" Description="" Url=""><as:assemblyIdentity name="ALSimplePDFMerger.exe" version="1.0.0.0" publicKeyToken="a879992bcfe8ade3" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=TBOOKALEX\aless</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>lRP+LhvMr7+qNkND4o0mZ5I6i1QAWa7UdtbLbfZwaxU=</DigestValue></Reference></SignedInfo><SignatureValue>r+Vg2a0RdryRY7LHa5OLCzE1Ffl0kfR3cc1HHGU1C/WDvWhnVHLpTV2MuZ+rFGxmQ5yJUG8WrhtqiKF3bzfRLCYRNzbQwAzoEvUG4jlRIPn3o5u2Ax0xmlCGS2/nw4acWXLRMsJWme2I9kjxpB8DVr//v3QrIZAlXrHcH9vKigc=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>3ecAgZpouY2WDCVeI12w/U/GxMcyc73v1X40Eybs41/H24m85b7wRCV4fn5dbcCwoW24Zz4o6xxR//fmJw1joumZFpggFf0QDWBiVtRql6NKbc/g6LCGRYGDO13QItWw3Rk17/xUi/SGfinjcbbO3UO/vAEnQJwD9M7NHWOdxnU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB1TCCAT6gAwIBAgIQWUkMpihsdZtNCPdUwnmmSTANBgkqhkiG9w0BAQsFADApMScwJQYDVQQDHh4AVABCAE8ATwBLAEEATABFAFgAXABhAGwAZQBzAHMwHhcNMjQwNTIxMTMwNDExWhcNMjUwNTIxMTkwNDExWjApMScwJQYDVQQDHh4AVABCAE8ATwBLAEEATABFAFgAXABhAGwAZQBzAHMwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAN3nAIGaaLmNlgwlXiNdsP1PxsTHMnO979V+NBMm7ONfx9uJvOW+8EQleH5+XW3AsKFtuGc+KOscUf/35icNY6LpmRaYIBX9EA1gYlbUapejSm3P4OiwhkWBgztd0CLVsN0ZNe/8VIv0hn4p43G2zt1Dv7wBJ0CcA/TOzR1jncZ1AgMBAAEwDQYJKoZIhvcNAQELBQADgYEAQQVAn6WzKiNvQ8ZshGwtBY2WubShMQqBTSA3Szw6KxpXkKlbi7o5KBpj63KVb8oi4Qwa+YFIpG9JNXbegYRzhAayu/ssCnkraXzPlzwSx482rXWY43m4DMM2bcb/w5E0DHReg8dIkGMg7JGNNyCMr+ptiPlOuDPP7CQEGgWjOlg=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
